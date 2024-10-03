@@ -15,3 +15,29 @@ footer.footer {
   bottom: 0;
   width: 100%;
 }
+
+.hero-scene {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/istockphoto-1829240599-1024x1024.jpg);
+    background-size: cover;
+    filter: brightness(0.4);
+  }
+  * {
+    position: relative;
+  }
+
+  .hero-scene-content {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

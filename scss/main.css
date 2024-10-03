@@ -8753,7 +8753,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: #292222 !important;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -11980,4 +11980,29 @@ footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.hero-scene {
+  position: relative;
+}
+.hero-scene::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/istockphoto-1829240599-1024x1024.jpg);
+  background-size: cover;
+  filter: brightness(0.4);
+}
+.hero-scene * {
+  position: relative;
+}
+.hero-scene .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
